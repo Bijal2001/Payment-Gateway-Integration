@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fix{
+    clear:both;
+    overflow: hidden;
+    
+}
+
+header{
+    overflow:hidden;
+    height:100vh;
+}
+
+/* video css */
+.vid-bg{
+    position:absolute;
+    right:0;
+    bottom:0;
+    top: 80px;
+    width: 101%;
+    height: 85%;
+}
+
+/* navbar css */
+.nav-area{
+    background: rgba(0,0,0,0.7);
+    height:60px;
+    position:absolute;
+    width:100%;
+}
+.logo{
+    margin:-54px 111px;
+    height:60px;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+    text-transform:capitalize;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.logo span{
+    color:#f5bb00;
+}
+#uplogo{
+    margin: -2px 28px;
+}
+#uplogo img{
+    height: 56px;
+    margin: 4px 6px;
+}
+.menu-area{
+    float:right;
+    list-style:none;
+    margin:-39px 54px;
+}
+.menu-area li{
+    display:inline-block;
+    margin:0 5px;
+}
+.menu-area li a{
+    text-decoration:none;
+    color:white;
+    padding:5px 10px;
+    letter-spacing:2px;
+}
+.menu-area li a:hover{
+    color:#f5bb00;
+}
+.menu-area li.active a{
+    color:#f5bb00;
+}
+.banner-text{
+    position: absolute;
+    top:79%;
+    text-align: center;
+    left:27%;
+}
+
+.banner-text h2{
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    margin:0;
+   z-index: 1;
+}
+.banner-text h2 span{
+    color:#ffc400;
+}
+.banner-text p{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.7rem;
+    margin:12px;
+} 
+.btn{
+    font-family: 'Baloo Bhaina ', cursive;
+    margin: 25px;
+    color: black;
+     padding: 7px 35px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style:oblique;
+}
+.button{
+font-family: 'Baloo Bhaina ', cursive;
+margin: 4px;
+color: black;
+background-color: #98b1f3;
+border: 1px solid black;
+border-radius: 30px;
+padding: 7px 35px;
+font-size: 15px;
+cursor: pointer;
+font-weight: bold;
+font-style:oblique;
+}
+
+/* boxex css */
+.container{
+    margin-top: -45px;
+    padding: 168px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin:0 auto;
+    background: white;
+    transition: 0.5s;
+}
+.container .card:hover{
+    box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+}
+.container .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: rgb(224, 210, 241);
+    color: #c3073f;
+}
+.container .card .face.face1 h2{
+    margin-top: 15px;
+}
+.container .card .face.face2{
+    background-color: #c3073f;
+    transition: 0.5s;   
+}
+.container .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+.container .card .face.face2 img{
+    height: 399px;
+    width: 307px;
+    transition: 0.5s;
+    border:1px solid black;
+}
+.container .card:hover .face.face2 img{
+    width:60px;
+    height:75px;
+}
+
+/* home css */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 19px 50px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: normal;
+    margin: -10px auto;
+    background: rgb(239, 182, 241);
+    width: 87%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+}
+#home h2{
+    color: rgb(27, 24, 24);
+    text-align: center;
+     
+    font-family: 'Noto Sans TC",sans-serif';
+    font-weight: normal;
+    font-size: 20px;
+}
+#home p{
+    color: rgb(27, 24, 24);
+    text-align: center;
+   font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans TC",sans-serif';
+}
+
+/* utility class */
+h.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.section_heading {
+    font-family: "Akaya Telivigala", cursive;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -155px;
+    padding-top: 20px;
+ }
+   
+.section_heading span:nth-child(2) {
+      display: block;
+      margin: 6px auto;
+      width: 70px;
+      height: 4px;
+      border-radius: 10px;
+      background: rgba(102, 51, 153, 0.637);
+}
+
+
+/* Analytics */
+.analytics_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url('../img/analyticbg.jpg');
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+  
+.analytics_box .analytics_item {
+    text-align: center;
+    margin-top: 25px;
+  }
+.analytics_box .analytics_item img {
+    width: 90px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 4px double black;
+    border-radius: 50%;
+}
+.analytics_box .analytics_item .analytics_count {
+    margin-top: 15px;
+}
+.analytics_box .analytics_item .analytics_term {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 20px !important;
+}
+
+/* footer css */
+footer {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+}
+#center-1 ul{
+    display: inline-flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#center-1 ul li {
+   list-style: none;
+    font-size: 12px;
+}
+ #center-1 ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    padding: 5px 0px;
+    text-decoration: none;
+    
+}
+#center-1 ul li a:hover{
+    color: burlywood;
+    display: block;
+}
+#center-1 ul li ::after{
+    content: "|";
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+}

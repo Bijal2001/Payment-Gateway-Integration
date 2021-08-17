@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: #d6c7b5;
+    background:url(../img/contactbg.jpg) no-repeat center center/cover;
+}
+
+/* navbar css */
+.nav-area{
+    background: rgba(0,0,0,0.7);
+    height:60px;
+    position:absolute;
+    width:100%;
+}
+.logo{
+    margin:-54px 111px;
+    height:60px;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+    text-transform:capitalize;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.logo span{
+    color:#f5bb00;
+}
+#uplogo{
+    margin: -2px 28px;
+}
+#uplogo img{
+    height: 56px;
+    margin: 4px 6px;
+}
+.menu-area{
+    float:right;
+    list-style:none;
+    margin:-39px 54px;
+}
+
+.menu-area li{
+    display:inline-block;
+    margin:0 5px;
+}
+.menu-area li a{
+    text-decoration:none;
+    color:white;
+    padding:5px 10px;
+    letter-spacing:2px;
+}
+
+.menu-area li a:hover{
+    color:#f5bb00;
+}
+.menu-area li.active a{
+    color:#f5bb00;
+}
+
+/* title css */
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 28px 0px;
+}
+
+  .title h1{
+    z-index: -1;
+    font-weight: bold; 
+    margin-top: 65px;
+    
+} 
+
+/* form css */
+form{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.9;
+    height: 530px;
+}
+.con{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column; 
+}
+.form-group{
+    padding: 13px 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 1.6rem;
+}
+.myinput{
+    color: white;
+    outline: none;
+    background-color: #544848;;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 18px;
+    width: 560px;
+    padding:10px;
+    margin:5px 0px;
+    box-shadow: 0 0 10px 4px #344953;
+}
+
+label{
+    color: rgb(0, 0, 0) ;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.btn{
+    margin:8px 0px;
+    padding: 4px 22px;
+    box-shadow: 0 0 7px 3px #344953;
+    font-size: 17px;
+    background: olive;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+}
+button:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+::placeholder{
+    color: white;
+    padding:5px 5px;
+}

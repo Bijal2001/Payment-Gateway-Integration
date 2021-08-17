@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #d6c7b5;
+}
+
+/* navbar css */
+.nav-area{
+    background: rgba(0,0,0,0.7);
+    height:60px;
+    position:absolute;
+    width:100%;
+}
+.logo{
+    margin:-54px 111px;
+    height:60px;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+    text-transform:capitalize;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.logo span{
+    color:#f5bb00;
+}
+#uplogo{
+    margin: -2px 28px;
+}
+#uplogo img{
+    height: 56px;
+    margin: 4px 6px;
+}
+.menu-area{
+    float:right;
+    list-style:none;
+    margin:-39px 54px;
+}
+.menu-area li{
+    display:inline-block;
+    margin:0 5px;
+}
+.menu-area li a{
+    text-decoration:none;
+    color:white;
+    padding:5px 10px;
+    letter-spacing:2px;
+}
+.menu-area li a:hover{
+    color:#f5bb00;
+}
+.menu-area li.active a{
+    color:#f5bb00;
+}
+
+/* title css */
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+     color: #222; 
+     padding: 50px 0px;
+}
+
+ .title h1{
+    font-weight: bold;
+    margin: 55px auto;
+    text-align: center;
+}  
+ 
+/* container css */
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    margin-top: -43px;
+    
+}
+.container .card{
+    height: 300px;
+    width: 369px;
+    position: relative;
+    background: #1d708b;
+    margin: 30px 12px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+
+}
+
+.container .card:hover{
+    height:345px;
+}
+
+.container .card .imgBx{
+    position:relative;
+    width:280px;
+    height:180px;
+    top:-60px;
+    left:20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width:100%;
+    border-radius:4px;
+}
+
+.container .card .content{
+    position:relative;
+    margin-top:-140px;
+    padding:0px 15px;
+    text-align:center;
+    color:#111;
+    visibility:hidden;
+    opacity: 0;
+    transition:0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility:visible;
+    opacity:1;
+    margin-top:-40px;
+    transition-delay: 0.3s;
+}
+
+#bgimg{
+    background:url('../img/bgabtus.jpg') no-repeat center center/cover;
+    top:50px;
+}
